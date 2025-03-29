@@ -28,9 +28,9 @@ Prescription Scanner is a Flutter mobile application that helps users scan and a
 ## 📷 Screenshots
 
 <p align="center">
-  <img src="screenshots/welcome_screen.png" width="200" alt="Welcome Screen">
-  <img src="screenshots/camera_screen.png" width="200" alt="Camera Screen">
-  <img src="screenshots/results_screen.png" width="200" alt="Results Screen">
+  <img src="screenshots/welcome_screen.png"  alt="Welcome Screen">
+  <img src="screenshots/camera_screen.png"  alt="Camera Screen">
+  <img src="screenshots/results_screen.png"  alt="Results Screen">
 </p>
 
 ## 🚀 Getting Started
