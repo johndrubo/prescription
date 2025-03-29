@@ -99,7 +99,7 @@ Contributions are welcome! Please feel free to submit a Pull Request.
 
 ## 👨‍💻 Author
 
-- Your Name - [GitHub Profile](https://github.com/yourusername)
+- John Drubo Karmoker - [GitHub Profile](https://github.com/johndrubo)
 
 ---
 
