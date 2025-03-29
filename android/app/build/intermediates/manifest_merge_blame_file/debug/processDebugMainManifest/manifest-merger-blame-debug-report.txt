@@ -1,0 +1,392 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.example.prescription"
+4    android:versionCode="1"
+5    android:versionName="1.0.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="26"
+9        android:targetSdkVersion="35" />
+10    <!--
+11         The INTERNET permission is required for development. Specifically,
+12         the Flutter tool needs it to communicate with the running application
+13         to allow setting breakpoints, to provide hot reload, etc.
+14    -->
+15    <uses-permission android:name="android.permission.INTERNET" />
+15-->D:\prescription\android\app\src\debug\AndroidManifest.xml:6:5-66
+15-->D:\prescription\android\app\src\debug\AndroidManifest.xml:6:22-64
+16    <!--
+17     Required to query activities that can process text, see:
+18         https://developer.android.com/training/package-visibility and
+19         https://developer.android.com/reference/android/content/Intent#ACTION_PROCESS_TEXT.
+20
+21         In particular, this is used by the Flutter engine in io.flutter.plugin.text.ProcessTextPlugin.
+22    -->
+23    <queries>
+23-->D:\prescription\android\app\src\main\AndroidManifest.xml:39:5-44:15
+24        <intent>
+24-->D:\prescription\android\app\src\main\AndroidManifest.xml:40:9-43:18
+25            <action android:name="android.intent.action.PROCESS_TEXT" />
+25-->D:\prescription\android\app\src\main\AndroidManifest.xml:41:13-72
+25-->D:\prescription\android\app\src\main\AndroidManifest.xml:41:21-70
+26
+27            <data android:mimeType="text/plain" />
+27-->D:\prescription\android\app\src\main\AndroidManifest.xml:42:13-50
+27-->D:\prescription\android\app\src\main\AndroidManifest.xml:42:19-48
+28        </intent>
+29    </queries>
+30
+31    <uses-permission android:name="android.permission.CAMERA" />
+31-->[:camera_android] C:\Users\johnd\AppData\Local\Pub\Cache\hosted\pub.dev\camera_android-0.10.10+1\android\build\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:7:5-65
+31-->[:camera_android] C:\Users\johnd\AppData\Local\Pub\Cache\hosted\pub.dev\camera_android-0.10.10+1\android\build\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:7:22-62
+32    <uses-permission android:name="android.permission.RECORD_AUDIO" /> <!-- For allowlist service -->
+32-->[:camera_android] C:\Users\johnd\AppData\Local\Pub\Cache\hosted\pub.dev\camera_android-0.10.10+1\android\build\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:8:5-71
+32-->[:camera_android] C:\Users\johnd\AppData\Local\Pub\Cache\hosted\pub.dev\camera_android-0.10.10+1\android\build\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:8:22-68
+33    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+33-->[com.google.mlkit:vision-internal-vkp:18.2.2] C:\ProgramData\chocolatey\lib\gradle\tools\gradle-8.13\caches\8.13\transforms\a6ac77bf1337d7d0d1aed3f4d128728b\transformed\jetified-vision-internal-vkp-18.2.2\AndroidManifest.xml:7:5-79
+33-->[com.google.mlkit:vision-internal-vkp:18.2.2] C:\ProgramData\chocolatey\lib\gradle\tools\gradle-8.13\caches\8.13\transforms\a6ac77bf1337d7d0d1aed3f4d128728b\transformed\jetified-vision-internal-vkp-18.2.2\AndroidManifest.xml:7:22-76
+34    <uses-permission android:name="android.permission.WAKE_LOCK" /> <!-- Required by older versions of Google Play services to create IID tokens -->
+34-->[com.google.firebase:firebase-iid:20.1.5] C:\ProgramData\chocolatey\lib\gradle\tools\gradle-8.13\caches\8.13\transforms\d07967c3b666b2134ef4538444fb48d3\transformed\jetified-firebase-iid-20.1.5\AndroidManifest.xml:24:5-68
+34-->[com.google.firebase:firebase-iid:20.1.5] C:\ProgramData\chocolatey\lib\gradle\tools\gradle-8.13\caches\8.13\transforms\d07967c3b666b2134ef4538444fb48d3\transformed\jetified-firebase-iid-20.1.5\AndroidManifest.xml:24:22-65
+35    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+35-->[com.google.firebase:firebase-iid:20.1.5] C:\ProgramData\chocolatey\lib\gradle\tools\gradle-8.13\caches\8.13\transforms\d07967c3b666b2134ef4538444fb48d3\transformed\jetified-firebase-iid-20.1.5\AndroidManifest.xml:26:5-82
+35-->[com.google.firebase:firebase-iid:20.1.5] C:\ProgramData\chocolatey\lib\gradle\tools\gradle-8.13\caches\8.13\transforms\d07967c3b666b2134ef4538444fb48d3\transformed\jetified-firebase-iid-20.1.5\AndroidManifest.xml:26:22-79
+36
+37    <permission
+37-->[androidx.core:core:1.13.1] C:\ProgramData\chocolatey\lib\gradle\tools\gradle-8.13\caches\8.13\transforms\b9ac3b4132eba029e4495aec5906b938\transformed\core-1.13.1\AndroidManifest.xml:22:5-24:47
+38        android:name="com.example.prescription.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+38-->[androidx.core:core:1.13.1] C:\ProgramData\chocolatey\lib\gradle\tools\gradle-8.13\caches\8.13\transforms\b9ac3b4132eba029e4495aec5906b938\transformed\core-1.13.1\AndroidManifest.xml:23:9-81
+39        android:protectionLevel="signature" />
+39-->[androidx.core:core:1.13.1] C:\ProgramData\chocolatey\lib\gradle\tools\gradle-8.13\caches\8.13\transforms\b9ac3b4132eba029e4495aec5906b938\transformed\core-1.13.1\AndroidManifest.xml:24:9-44
+40
+41    <uses-permission android:name="com.example.prescription.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+41-->[androidx.core:core:1.13.1] C:\ProgramData\chocolatey\lib\gradle\tools\gradle-8.13\caches\8.13\transforms\b9ac3b4132eba029e4495aec5906b938\transformed\core-1.13.1\AndroidManifest.xml:26:5-97
+41-->[androidx.core:core:1.13.1] C:\ProgramData\chocolatey\lib\gradle\tools\gradle-8.13\caches\8.13\transforms\b9ac3b4132eba029e4495aec5906b938\transformed\core-1.13.1\AndroidManifest.xml:26:22-94
+42
+43    <application
+44        android:name="android.app.Application"
+45        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+45-->[androidx.core:core:1.13.1] C:\ProgramData\chocolatey\lib\gradle\tools\gradle-8.13\caches\8.13\transforms\b9ac3b4132eba029e4495aec5906b938\transformed\core-1.13.1\AndroidManifest.xml:28:18-86
+46        android:debuggable="true"
+47        android:extractNativeLibs="false"
+48        android:icon="@mipmap/ic_launcher"
+49        android:label="prescription"
+50        android:testOnly="true" >
+51        <activity
+52            android:name="com.example.prescription.MainActivity"
+53            android:configChanges="orientation|keyboardHidden|keyboard|screenSize|smallestScreenSize|locale|layoutDirection|fontScale|screenLayout|density|uiMode"
+54            android:exported="true"
+55            android:hardwareAccelerated="true"
+56            android:launchMode="singleTop"
+57            android:taskAffinity=""
+58            android:theme="@style/LaunchTheme"
+59            android:windowSoftInputMode="adjustResize" >
+60
+61            <!--
+62                 Specifies an Android theme to apply to this Activity as soon as
+63                 the Android process has started. This theme is visible to the user
+64                 while the Flutter UI initializes. After that, this theme continues
+65                 to determine the Window background behind the Flutter UI.
+66            -->
+67            <meta-data
+68                android:name="io.flutter.embedding.android.NormalTheme"
+69                android:resource="@style/NormalTheme" />
+70
+71            <intent-filter>
+72                <action android:name="android.intent.action.MAIN" />
+73
+74                <category android:name="android.intent.category.LAUNCHER" />
+75            </intent-filter>
+76        </activity>
+77        <!--
+78             Don't delete the meta-data below.
+79             This is used by the Flutter tool to generate GeneratedPluginRegistrant.java
+80        -->
+81        <meta-data
+82            android:name="flutterEmbedding"
+83            android:value="2" />
+84
+85        <provider
+85-->[:image_picker_android] C:\Users\johnd\AppData\Local\Pub\Cache\hosted\pub.dev\image_picker_android-0.8.12+22\android\build\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:9:9-17:20
+86            android:name="io.flutter.plugins.imagepicker.ImagePickerFileProvider"
+86-->[:image_picker_android] C:\Users\johnd\AppData\Local\Pub\Cache\hosted\pub.dev\image_picker_android-0.8.12+22\android\build\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:10:13-82
+87            android:authorities="com.example.prescription.flutter.image_provider"
+87-->[:image_picker_android] C:\Users\johnd\AppData\Local\Pub\Cache\hosted\pub.dev\image_picker_android-0.8.12+22\android\build\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:11:13-74
+88            android:exported="false"
+88-->[:image_picker_android] C:\Users\johnd\AppData\Local\Pub\Cache\hosted\pub.dev\image_picker_android-0.8.12+22\android\build\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:12:13-37
+89            android:grantUriPermissions="true" >
+89-->[:image_picker_android] C:\Users\johnd\AppData\Local\Pub\Cache\hosted\pub.dev\image_picker_android-0.8.12+22\android\build\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:13:13-47
+90            <meta-data
+90-->[:image_picker_android] C:\Users\johnd\AppData\Local\Pub\Cache\hosted\pub.dev\image_picker_android-0.8.12+22\android\build\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:14:13-16:75
+91                android:name="android.support.FILE_PROVIDER_PATHS"
+91-->[:image_picker_android] C:\Users\johnd\AppData\Local\Pub\Cache\hosted\pub.dev\image_picker_android-0.8.12+22\android\build\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:15:17-67
+92                android:resource="@xml/flutter_image_picker_file_paths" />
+92-->[:image_picker_android] C:\Users\johnd\AppData\Local\Pub\Cache\hosted\pub.dev\image_picker_android-0.8.12+22\android\build\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:16:17-72
+93        </provider> <!-- Trigger Google Play services to install the backported photo picker module. -->
+94        <service
+94-->[:image_picker_android] C:\Users\johnd\AppData\Local\Pub\Cache\hosted\pub.dev\image_picker_android-0.8.12+22\android\build\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:19:9-31:19
+95            android:name="com.google.android.gms.metadata.ModuleDependencies"
+95-->[:image_picker_android] C:\Users\johnd\AppData\Local\Pub\Cache\hosted\pub.dev\image_picker_android-0.8.12+22\android\build\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:20:13-78
+96            android:enabled="false"
+96-->[:image_picker_android] C:\Users\johnd\AppData\Local\Pub\Cache\hosted\pub.dev\image_picker_android-0.8.12+22\android\build\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:21:13-36
+97            android:exported="false" >
+97-->[:image_picker_android] C:\Users\johnd\AppData\Local\Pub\Cache\hosted\pub.dev\image_picker_android-0.8.12+22\android\build\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:22:13-37
+98            <intent-filter>
+98-->[:image_picker_android] C:\Users\johnd\AppData\Local\Pub\Cache\hosted\pub.dev\image_picker_android-0.8.12+22\android\build\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:24:13-26:29
+99                <action android:name="com.google.android.gms.metadata.MODULE_DEPENDENCIES" />
+99-->[:image_picker_android] C:\Users\johnd\AppData\Local\Pub\Cache\hosted\pub.dev\image_picker_android-0.8.12+22\android\build\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:25:17-94
+99-->[:image_picker_android] C:\Users\johnd\AppData\Local\Pub\Cache\hosted\pub.dev\image_picker_android-0.8.12+22\android\build\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:25:25-91
+100            </intent-filter>
+101
+102            <meta-data
+102-->[:image_picker_android] C:\Users\johnd\AppData\Local\Pub\Cache\hosted\pub.dev\image_picker_android-0.8.12+22\android\build\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:28:13-30:36
+103                android:name="photopicker_activity:0:required"
+103-->[:image_picker_android] C:\Users\johnd\AppData\Local\Pub\Cache\hosted\pub.dev\image_picker_android-0.8.12+22\android\build\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:29:17-63
+104                android:value="" />
+104-->[:image_picker_android] C:\Users\johnd\AppData\Local\Pub\Cache\hosted\pub.dev\image_picker_android-0.8.12+22\android\build\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:30:17-33
+105        </service>
+106        <service
+106-->[com.google.mlkit:image-labeling:17.0.7] C:\ProgramData\chocolatey\lib\gradle\tools\gradle-8.13\caches\8.13\transforms\6da8e593c7661143a4afdd6ca6a6647e\transformed\jetified-image-labeling-17.0.7\AndroidManifest.xml:8:9-14:19
+107            android:name="com.google.mlkit.common.internal.MlKitComponentDiscoveryService"
+107-->[com.google.mlkit:image-labeling:17.0.7] C:\ProgramData\chocolatey\lib\gradle\tools\gradle-8.13\caches\8.13\transforms\6da8e593c7661143a4afdd6ca6a6647e\transformed\jetified-image-labeling-17.0.7\AndroidManifest.xml:9:13-91
+108            android:directBootAware="true"
+108-->[com.google.mlkit:common:18.8.0] C:\ProgramData\chocolatey\lib\gradle\tools\gradle-8.13\caches\8.13\transforms\193d8fec2031b0555f745be347dd1565\transformed\jetified-common-18.8.0\AndroidManifest.xml:17:13-43
+109            android:exported="false" >
+109-->[com.google.mlkit:image-labeling:17.0.7] C:\ProgramData\chocolatey\lib\gradle\tools\gradle-8.13\caches\8.13\transforms\6da8e593c7661143a4afdd6ca6a6647e\transformed\jetified-image-labeling-17.0.7\AndroidManifest.xml:10:13-37
+110            <meta-data
+110-->[com.google.mlkit:image-labeling:17.0.7] C:\ProgramData\chocolatey\lib\gradle\tools\gradle-8.13\caches\8.13\transforms\6da8e593c7661143a4afdd6ca6a6647e\transformed\jetified-image-labeling-17.0.7\AndroidManifest.xml:11:13-13:85
+111                android:name="com.google.firebase.components:com.google.mlkit.vision.label.defaults.internal.BundledLabelRegistrar"
+111-->[com.google.mlkit:image-labeling:17.0.7] C:\ProgramData\chocolatey\lib\gradle\tools\gradle-8.13\caches\8.13\transforms\6da8e593c7661143a4afdd6ca6a6647e\transformed\jetified-image-labeling-17.0.7\AndroidManifest.xml:12:17-132
+112                android:value="com.google.firebase.components.ComponentRegistrar" />
+112-->[com.google.mlkit:image-labeling:17.0.7] C:\ProgramData\chocolatey\lib\gradle\tools\gradle-8.13\caches\8.13\transforms\6da8e593c7661143a4afdd6ca6a6647e\transformed\jetified-image-labeling-17.0.7\AndroidManifest.xml:13:17-82
+113            <meta-data
+113-->[com.google.mlkit:image-labeling-custom:17.0.1] C:\ProgramData\chocolatey\lib\gradle\tools\gradle-8.13\caches\8.13\transforms\2ace57695818abf0c8a354b9f51a3c70\transformed\jetified-image-labeling-custom-17.0.1\AndroidManifest.xml:11:13-13:85
+114                android:name="com.google.firebase.components:com.google.mlkit.vision.label.custom.internal.CustomLabelRegistrar"
+114-->[com.google.mlkit:image-labeling-custom:17.0.1] C:\ProgramData\chocolatey\lib\gradle\tools\gradle-8.13\caches\8.13\transforms\2ace57695818abf0c8a354b9f51a3c70\transformed\jetified-image-labeling-custom-17.0.1\AndroidManifest.xml:12:17-129
+115                android:value="com.google.firebase.components.ComponentRegistrar" />
+115-->[com.google.mlkit:image-labeling-custom:17.0.1] C:\ProgramData\chocolatey\lib\gradle\tools\gradle-8.13\caches\8.13\transforms\2ace57695818abf0c8a354b9f51a3c70\transformed\jetified-image-labeling-custom-17.0.1\AndroidManifest.xml:13:17-82
+116            <meta-data
+116-->[com.google.android.gms:play-services-mlkit-barcode-scanning:18.2.0] C:\ProgramData\chocolatey\lib\gradle\tools\gradle-8.13\caches\8.13\transforms\497d3e8ec1eb110cf964b76d0e0dc7aa\transformed\jetified-play-services-mlkit-barcode-scanning-18.2.0\AndroidManifest.xml:12:13-14:85
+117                android:name="com.google.firebase.components:com.google.mlkit.vision.barcode.internal.BarcodeRegistrar"
+117-->[com.google.android.gms:play-services-mlkit-barcode-scanning:18.2.0] C:\ProgramData\chocolatey\lib\gradle\tools\gradle-8.13\caches\8.13\transforms\497d3e8ec1eb110cf964b76d0e0dc7aa\transformed\jetified-play-services-mlkit-barcode-scanning-18.2.0\AndroidManifest.xml:13:17-120
+118                android:value="com.google.firebase.components.ComponentRegistrar" />
+118-->[com.google.android.gms:play-services-mlkit-barcode-scanning:18.2.0] C:\ProgramData\chocolatey\lib\gradle\tools\gradle-8.13\caches\8.13\transforms\497d3e8ec1eb110cf964b76d0e0dc7aa\transformed\jetified-play-services-mlkit-barcode-scanning-18.2.0\AndroidManifest.xml:14:17-82
+119            <meta-data
+119-->[com.google.android.gms:play-services-mlkit-face-detection:17.0.1] C:\ProgramData\chocolatey\lib\gradle\tools\gradle-8.13\caches\8.13\transforms\08271b0585212a94c0905d9384bca147\transformed\jetified-play-services-mlkit-face-detection-17.0.1\AndroidManifest.xml:12:13-14:85
+120                android:name="com.google.firebase.components:com.google.mlkit.vision.face.internal.FaceRegistrar"
+120-->[com.google.android.gms:play-services-mlkit-face-detection:17.0.1] C:\ProgramData\chocolatey\lib\gradle\tools\gradle-8.13\caches\8.13\transforms\08271b0585212a94c0905d9384bca147\transformed\jetified-play-services-mlkit-face-detection-17.0.1\AndroidManifest.xml:13:17-114
+121                android:value="com.google.firebase.components.ComponentRegistrar" />
+121-->[com.google.android.gms:play-services-mlkit-face-detection:17.0.1] C:\ProgramData\chocolatey\lib\gradle\tools\gradle-8.13\caches\8.13\transforms\08271b0585212a94c0905d9384bca147\transformed\jetified-play-services-mlkit-face-detection-17.0.1\AndroidManifest.xml:14:17-82
+122            <meta-data
+122-->[com.google.mlkit:vision-internal-vkp:18.2.2] C:\ProgramData\chocolatey\lib\gradle\tools\gradle-8.13\caches\8.13\transforms\a6ac77bf1337d7d0d1aed3f4d128728b\transformed\jetified-vision-internal-vkp-18.2.2\AndroidManifest.xml:14:13-16:85
+123                android:name="com.google.firebase.components:com.google.mlkit.vision.vkp.VkpRegistrar"
+123-->[com.google.mlkit:vision-internal-vkp:18.2.2] C:\ProgramData\chocolatey\lib\gradle\tools\gradle-8.13\caches\8.13\transforms\a6ac77bf1337d7d0d1aed3f4d128728b\transformed\jetified-vision-internal-vkp-18.2.2\AndroidManifest.xml:15:17-103
+124                android:value="com.google.firebase.components.ComponentRegistrar" />
+124-->[com.google.mlkit:vision-internal-vkp:18.2.2] C:\ProgramData\chocolatey\lib\gradle\tools\gradle-8.13\caches\8.13\transforms\a6ac77bf1337d7d0d1aed3f4d128728b\transformed\jetified-vision-internal-vkp-18.2.2\AndroidManifest.xml:16:17-82
+125            <meta-data
+125-->[com.google.android.gms:play-services-mlkit-text-recognition-common:19.0.0] C:\ProgramData\chocolatey\lib\gradle\tools\gradle-8.13\caches\8.13\transforms\bc06c6239429ed44b86de752e2c70c5f\transformed\jetified-play-services-mlkit-text-recognition-common-19.0.0\AndroidManifest.xml:12:13-14:85
+126                android:name="com.google.firebase.components:com.google.mlkit.vision.text.internal.TextRegistrar"
+126-->[com.google.android.gms:play-services-mlkit-text-recognition-common:19.0.0] C:\ProgramData\chocolatey\lib\gradle\tools\gradle-8.13\caches\8.13\transforms\bc06c6239429ed44b86de752e2c70c5f\transformed\jetified-play-services-mlkit-text-recognition-common-19.0.0\AndroidManifest.xml:13:17-114
+127                android:value="com.google.firebase.components.ComponentRegistrar" />
+127-->[com.google.android.gms:play-services-mlkit-text-recognition-common:19.0.0] C:\ProgramData\chocolatey\lib\gradle\tools\gradle-8.13\caches\8.13\transforms\bc06c6239429ed44b86de752e2c70c5f\transformed\jetified-play-services-mlkit-text-recognition-common-19.0.0\AndroidManifest.xml:14:17-82
+128            <meta-data
+128-->[com.google.mlkit:vision-common:17.3.0] C:\ProgramData\chocolatey\lib\gradle\tools\gradle-8.13\caches\8.13\transforms\c48c748686b57fc0ce321bd6e1ec2e4a\transformed\jetified-vision-common-17.3.0\AndroidManifest.xml:12:13-14:85
+129                android:name="com.google.firebase.components:com.google.mlkit.vision.common.internal.VisionCommonRegistrar"
+129-->[com.google.mlkit:vision-common:17.3.0] C:\ProgramData\chocolatey\lib\gradle\tools\gradle-8.13\caches\8.13\transforms\c48c748686b57fc0ce321bd6e1ec2e4a\transformed\jetified-vision-common-17.3.0\AndroidManifest.xml:13:17-124
+130                android:value="com.google.firebase.components.ComponentRegistrar" />
+130-->[com.google.mlkit:vision-common:17.3.0] C:\ProgramData\chocolatey\lib\gradle\tools\gradle-8.13\caches\8.13\transforms\c48c748686b57fc0ce321bd6e1ec2e4a\transformed\jetified-vision-common-17.3.0\AndroidManifest.xml:14:17-82
+131            <meta-data
+131-->[com.google.mlkit:linkfirebase:17.0.0] C:\ProgramData\chocolatey\lib\gradle\tools\gradle-8.13\caches\8.13\transforms\bf45a1e487e118fcb6a02fa9ad5d226b\transformed\jetified-linkfirebase-17.0.0\AndroidManifest.xml:12:13-14:85
+132                android:name="com.google.firebase.components:com.google.mlkit.linkfirebase.internal.LinkFirebaseComponentRegistrar"
+132-->[com.google.mlkit:linkfirebase:17.0.0] C:\ProgramData\chocolatey\lib\gradle\tools\gradle-8.13\caches\8.13\transforms\bf45a1e487e118fcb6a02fa9ad5d226b\transformed\jetified-linkfirebase-17.0.0\AndroidManifest.xml:13:17-132
+133                android:value="com.google.firebase.components.ComponentRegistrar" />
+133-->[com.google.mlkit:linkfirebase:17.0.0] C:\ProgramData\chocolatey\lib\gradle\tools\gradle-8.13\caches\8.13\transforms\bf45a1e487e118fcb6a02fa9ad5d226b\transformed\jetified-linkfirebase-17.0.0\AndroidManifest.xml:14:17-82
+134            <meta-data
+134-->[com.google.mlkit:common:18.8.0] C:\ProgramData\chocolatey\lib\gradle\tools\gradle-8.13\caches\8.13\transforms\193d8fec2031b0555f745be347dd1565\transformed\jetified-common-18.8.0\AndroidManifest.xml:20:13-22:85
+135                android:name="com.google.firebase.components:com.google.mlkit.common.internal.CommonComponentRegistrar"
+135-->[com.google.mlkit:common:18.8.0] C:\ProgramData\chocolatey\lib\gradle\tools\gradle-8.13\caches\8.13\transforms\193d8fec2031b0555f745be347dd1565\transformed\jetified-common-18.8.0\AndroidManifest.xml:21:17-120
+136                android:value="com.google.firebase.components.ComponentRegistrar" />
+136-->[com.google.mlkit:common:18.8.0] C:\ProgramData\chocolatey\lib\gradle\tools\gradle-8.13\caches\8.13\transforms\193d8fec2031b0555f745be347dd1565\transformed\jetified-common-18.8.0\AndroidManifest.xml:22:17-82
+137        </service>
+138
+139        <provider
+139-->[com.google.mlkit:common:18.8.0] C:\ProgramData\chocolatey\lib\gradle\tools\gradle-8.13\caches\8.13\transforms\193d8fec2031b0555f745be347dd1565\transformed\jetified-common-18.8.0\AndroidManifest.xml:9:9-13:38
+140            android:name="com.google.mlkit.common.internal.MlKitInitProvider"
+140-->[com.google.mlkit:common:18.8.0] C:\ProgramData\chocolatey\lib\gradle\tools\gradle-8.13\caches\8.13\transforms\193d8fec2031b0555f745be347dd1565\transformed\jetified-common-18.8.0\AndroidManifest.xml:10:13-78
+141            android:authorities="com.example.prescription.mlkitinitprovider"
+141-->[com.google.mlkit:common:18.8.0] C:\ProgramData\chocolatey\lib\gradle\tools\gradle-8.13\caches\8.13\transforms\193d8fec2031b0555f745be347dd1565\transformed\jetified-common-18.8.0\AndroidManifest.xml:11:13-69
+142            android:exported="false"
+142-->[com.google.mlkit:common:18.8.0] C:\ProgramData\chocolatey\lib\gradle\tools\gradle-8.13\caches\8.13\transforms\193d8fec2031b0555f745be347dd1565\transformed\jetified-common-18.8.0\AndroidManifest.xml:12:13-37
+143            android:initOrder="99" />
+143-->[com.google.mlkit:common:18.8.0] C:\ProgramData\chocolatey\lib\gradle\tools\gradle-8.13\caches\8.13\transforms\193d8fec2031b0555f745be347dd1565\transformed\jetified-common-18.8.0\AndroidManifest.xml:13:13-35
+144
+145        <service
+145-->[com.google.firebase:firebase-iid:20.1.5] C:\ProgramData\chocolatey\lib\gradle\tools\gradle-8.13\caches\8.13\transforms\d07967c3b666b2134ef4538444fb48d3\transformed\jetified-firebase-iid-20.1.5\AndroidManifest.xml:29:9-35:19
+146            android:name="com.google.firebase.components.ComponentDiscoveryService"
+146-->[com.google.firebase:firebase-iid:20.1.5] C:\ProgramData\chocolatey\lib\gradle\tools\gradle-8.13\caches\8.13\transforms\d07967c3b666b2134ef4538444fb48d3\transformed\jetified-firebase-iid-20.1.5\AndroidManifest.xml:30:13-84
+147            android:directBootAware="true"
+147-->[com.google.firebase:firebase-common:19.3.0] C:\ProgramData\chocolatey\lib\gradle\tools\gradle-8.13\caches\8.13\transforms\c5e0eb7ecf71dc5a4b26c1dafe878d22\transformed\jetified-firebase-common-19.3.0\AndroidManifest.xml:34:13-43
+148            android:exported="false" >
+148-->[com.google.firebase:firebase-iid:20.1.5] C:\ProgramData\chocolatey\lib\gradle\tools\gradle-8.13\caches\8.13\transforms\d07967c3b666b2134ef4538444fb48d3\transformed\jetified-firebase-iid-20.1.5\AndroidManifest.xml:31:13-37
+149            <meta-data
+149-->[com.google.firebase:firebase-iid:20.1.5] C:\ProgramData\chocolatey\lib\gradle\tools\gradle-8.13\caches\8.13\transforms\d07967c3b666b2134ef4538444fb48d3\transformed\jetified-firebase-iid-20.1.5\AndroidManifest.xml:32:13-34:85
+150                android:name="com.google.firebase.components:com.google.firebase.iid.Registrar"
+150-->[com.google.firebase:firebase-iid:20.1.5] C:\ProgramData\chocolatey\lib\gradle\tools\gradle-8.13\caches\8.13\transforms\d07967c3b666b2134ef4538444fb48d3\transformed\jetified-firebase-iid-20.1.5\AndroidManifest.xml:33:17-96
+151                android:value="com.google.firebase.components.ComponentRegistrar" />
+151-->[com.google.firebase:firebase-iid:20.1.5] C:\ProgramData\chocolatey\lib\gradle\tools\gradle-8.13\caches\8.13\transforms\d07967c3b666b2134ef4538444fb48d3\transformed\jetified-firebase-iid-20.1.5\AndroidManifest.xml:34:17-82
+152            <meta-data
+152-->[com.google.firebase:firebase-installations:16.2.1] C:\ProgramData\chocolatey\lib\gradle\tools\gradle-8.13\caches\8.13\transforms\a54ee38c97eb4d64288e3f99c2d5f4f6\transformed\jetified-firebase-installations-16.2.1\AndroidManifest.xml:17:13-19:85
+153                android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar"
+153-->[com.google.firebase:firebase-installations:16.2.1] C:\ProgramData\chocolatey\lib\gradle\tools\gradle-8.13\caches\8.13\transforms\a54ee38c97eb4d64288e3f99c2d5f4f6\transformed\jetified-firebase-installations-16.2.1\AndroidManifest.xml:18:17-127
+154                android:value="com.google.firebase.components.ComponentRegistrar" />
+154-->[com.google.firebase:firebase-installations:16.2.1] C:\ProgramData\chocolatey\lib\gradle\tools\gradle-8.13\caches\8.13\transforms\a54ee38c97eb4d64288e3f99c2d5f4f6\transformed\jetified-firebase-installations-16.2.1\AndroidManifest.xml:19:17-82
+155        </service>
+156
+157        <receiver
+157-->[com.google.firebase:firebase-iid:20.1.5] C:\ProgramData\chocolatey\lib\gradle\tools\gradle-8.13\caches\8.13\transforms\d07967c3b666b2134ef4538444fb48d3\transformed\jetified-firebase-iid-20.1.5\AndroidManifest.xml:37:9-44:20
+158            android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver"
+158-->[com.google.firebase:firebase-iid:20.1.5] C:\ProgramData\chocolatey\lib\gradle\tools\gradle-8.13\caches\8.13\transforms\d07967c3b666b2134ef4538444fb48d3\transformed\jetified-firebase-iid-20.1.5\AndroidManifest.xml:38:13-78
+159            android:exported="true"
+159-->[com.google.firebase:firebase-iid:20.1.5] C:\ProgramData\chocolatey\lib\gradle\tools\gradle-8.13\caches\8.13\transforms\d07967c3b666b2134ef4538444fb48d3\transformed\jetified-firebase-iid-20.1.5\AndroidManifest.xml:39:13-36
+160            android:permission="com.google.android.c2dm.permission.SEND" >
+160-->[com.google.firebase:firebase-iid:20.1.5] C:\ProgramData\chocolatey\lib\gradle\tools\gradle-8.13\caches\8.13\transforms\d07967c3b666b2134ef4538444fb48d3\transformed\jetified-firebase-iid-20.1.5\AndroidManifest.xml:40:13-73
+161            <intent-filter>
+161-->[com.google.firebase:firebase-iid:20.1.5] C:\ProgramData\chocolatey\lib\gradle\tools\gradle-8.13\caches\8.13\transforms\d07967c3b666b2134ef4538444fb48d3\transformed\jetified-firebase-iid-20.1.5\AndroidManifest.xml:41:13-43:29
+162                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+162-->[com.google.firebase:firebase-iid:20.1.5] C:\ProgramData\chocolatey\lib\gradle\tools\gradle-8.13\caches\8.13\transforms\d07967c3b666b2134ef4538444fb48d3\transformed\jetified-firebase-iid-20.1.5\AndroidManifest.xml:42:17-81
+162-->[com.google.firebase:firebase-iid:20.1.5] C:\ProgramData\chocolatey\lib\gradle\tools\gradle-8.13\caches\8.13\transforms\d07967c3b666b2134ef4538444fb48d3\transformed\jetified-firebase-iid-20.1.5\AndroidManifest.xml:42:25-78
+163            </intent-filter>
+164        </receiver>
+165
+166        <activity
+166-->[com.google.android.gms:play-services-base:18.1.0] C:\ProgramData\chocolatey\lib\gradle\tools\gradle-8.13\caches\8.13\transforms\bd083442549ea9c73034e7de192c4d99\transformed\jetified-play-services-base-18.1.0\AndroidManifest.xml:20:9-22:45
+167            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+167-->[com.google.android.gms:play-services-base:18.1.0] C:\ProgramData\chocolatey\lib\gradle\tools\gradle-8.13\caches\8.13\transforms\bd083442549ea9c73034e7de192c4d99\transformed\jetified-play-services-base-18.1.0\AndroidManifest.xml:20:19-85
+168            android:exported="false"
+168-->[com.google.android.gms:play-services-base:18.1.0] C:\ProgramData\chocolatey\lib\gradle\tools\gradle-8.13\caches\8.13\transforms\bd083442549ea9c73034e7de192c4d99\transformed\jetified-play-services-base-18.1.0\AndroidManifest.xml:22:19-43
+169            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+169-->[com.google.android.gms:play-services-base:18.1.0] C:\ProgramData\chocolatey\lib\gradle\tools\gradle-8.13\caches\8.13\transforms\bd083442549ea9c73034e7de192c4d99\transformed\jetified-play-services-base-18.1.0\AndroidManifest.xml:21:19-78
+170
+171        <provider
+171-->[com.google.firebase:firebase-common:19.3.0] C:\ProgramData\chocolatey\lib\gradle\tools\gradle-8.13\caches\8.13\transforms\c5e0eb7ecf71dc5a4b26c1dafe878d22\transformed\jetified-firebase-common-19.3.0\AndroidManifest.xml:26:9-30:39
+172            android:name="com.google.firebase.provider.FirebaseInitProvider"
+172-->[com.google.firebase:firebase-common:19.3.0] C:\ProgramData\chocolatey\lib\gradle\tools\gradle-8.13\caches\8.13\transforms\c5e0eb7ecf71dc5a4b26c1dafe878d22\transformed\jetified-firebase-common-19.3.0\AndroidManifest.xml:27:13-77
+173            android:authorities="com.example.prescription.firebaseinitprovider"
+173-->[com.google.firebase:firebase-common:19.3.0] C:\ProgramData\chocolatey\lib\gradle\tools\gradle-8.13\caches\8.13\transforms\c5e0eb7ecf71dc5a4b26c1dafe878d22\transformed\jetified-firebase-common-19.3.0\AndroidManifest.xml:28:13-72
+174            android:exported="false"
+174-->[com.google.firebase:firebase-common:19.3.0] C:\ProgramData\chocolatey\lib\gradle\tools\gradle-8.13\caches\8.13\transforms\c5e0eb7ecf71dc5a4b26c1dafe878d22\transformed\jetified-firebase-common-19.3.0\AndroidManifest.xml:29:13-37
+175            android:initOrder="100" />
+175-->[com.google.firebase:firebase-common:19.3.0] C:\ProgramData\chocolatey\lib\gradle\tools\gradle-8.13\caches\8.13\transforms\c5e0eb7ecf71dc5a4b26c1dafe878d22\transformed\jetified-firebase-common-19.3.0\AndroidManifest.xml:30:13-36
+176
+177        <meta-data
+177-->[com.google.android.gms:play-services-basement:18.1.0] C:\ProgramData\chocolatey\lib\gradle\tools\gradle-8.13\caches\8.13\transforms\27efc543139161d449f79f7a4f483240\transformed\jetified-play-services-basement-18.1.0\AndroidManifest.xml:21:9-23:69
+178            android:name="com.google.android.gms.version"
+178-->[com.google.android.gms:play-services-basement:18.1.0] C:\ProgramData\chocolatey\lib\gradle\tools\gradle-8.13\caches\8.13\transforms\27efc543139161d449f79f7a4f483240\transformed\jetified-play-services-basement-18.1.0\AndroidManifest.xml:22:13-58
+179            android:value="@integer/google_play_services_version" />
+179-->[com.google.android.gms:play-services-basement:18.1.0] C:\ProgramData\chocolatey\lib\gradle\tools\gradle-8.13\caches\8.13\transforms\27efc543139161d449f79f7a4f483240\transformed\jetified-play-services-basement-18.1.0\AndroidManifest.xml:23:13-66
+180
+181        <uses-library
+181-->[androidx.window:window:1.2.0] C:\ProgramData\chocolatey\lib\gradle\tools\gradle-8.13\caches\8.13\transforms\ef86ee2f82867fd5f60cb698ac6ff0a6\transformed\jetified-window-1.2.0\AndroidManifest.xml:23:9-25:40
+182            android:name="androidx.window.extensions"
+182-->[androidx.window:window:1.2.0] C:\ProgramData\chocolatey\lib\gradle\tools\gradle-8.13\caches\8.13\transforms\ef86ee2f82867fd5f60cb698ac6ff0a6\transformed\jetified-window-1.2.0\AndroidManifest.xml:24:13-54
+183            android:required="false" />
+183-->[androidx.window:window:1.2.0] C:\ProgramData\chocolatey\lib\gradle\tools\gradle-8.13\caches\8.13\transforms\ef86ee2f82867fd5f60cb698ac6ff0a6\transformed\jetified-window-1.2.0\AndroidManifest.xml:25:13-37
+184        <uses-library
+184-->[androidx.window:window:1.2.0] C:\ProgramData\chocolatey\lib\gradle\tools\gradle-8.13\caches\8.13\transforms\ef86ee2f82867fd5f60cb698ac6ff0a6\transformed\jetified-window-1.2.0\AndroidManifest.xml:26:9-28:40
+185            android:name="androidx.window.sidecar"
+185-->[androidx.window:window:1.2.0] C:\ProgramData\chocolatey\lib\gradle\tools\gradle-8.13\caches\8.13\transforms\ef86ee2f82867fd5f60cb698ac6ff0a6\transformed\jetified-window-1.2.0\AndroidManifest.xml:27:13-51
+186            android:required="false" />
+186-->[androidx.window:window:1.2.0] C:\ProgramData\chocolatey\lib\gradle\tools\gradle-8.13\caches\8.13\transforms\ef86ee2f82867fd5f60cb698ac6ff0a6\transformed\jetified-window-1.2.0\AndroidManifest.xml:28:13-37
+187
+188        <provider
+188-->[androidx.lifecycle:lifecycle-process:2.7.0] C:\ProgramData\chocolatey\lib\gradle\tools\gradle-8.13\caches\8.13\transforms\d8d536f26fa5cec1666578111bb0c6c1\transformed\jetified-lifecycle-process-2.7.0\AndroidManifest.xml:24:9-32:20
+189            android:name="androidx.startup.InitializationProvider"
+189-->[androidx.lifecycle:lifecycle-process:2.7.0] C:\ProgramData\chocolatey\lib\gradle\tools\gradle-8.13\caches\8.13\transforms\d8d536f26fa5cec1666578111bb0c6c1\transformed\jetified-lifecycle-process-2.7.0\AndroidManifest.xml:25:13-67
+190            android:authorities="com.example.prescription.androidx-startup"
+190-->[androidx.lifecycle:lifecycle-process:2.7.0] C:\ProgramData\chocolatey\lib\gradle\tools\gradle-8.13\caches\8.13\transforms\d8d536f26fa5cec1666578111bb0c6c1\transformed\jetified-lifecycle-process-2.7.0\AndroidManifest.xml:26:13-68
+191            android:exported="false" >
+191-->[androidx.lifecycle:lifecycle-process:2.7.0] C:\ProgramData\chocolatey\lib\gradle\tools\gradle-8.13\caches\8.13\transforms\d8d536f26fa5cec1666578111bb0c6c1\transformed\jetified-lifecycle-process-2.7.0\AndroidManifest.xml:27:13-37
+192            <meta-data
+192-->[androidx.lifecycle:lifecycle-process:2.7.0] C:\ProgramData\chocolatey\lib\gradle\tools\gradle-8.13\caches\8.13\transforms\d8d536f26fa5cec1666578111bb0c6c1\transformed\jetified-lifecycle-process-2.7.0\AndroidManifest.xml:29:13-31:52
+193                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+193-->[androidx.lifecycle:lifecycle-process:2.7.0] C:\ProgramData\chocolatey\lib\gradle\tools\gradle-8.13\caches\8.13\transforms\d8d536f26fa5cec1666578111bb0c6c1\transformed\jetified-lifecycle-process-2.7.0\AndroidManifest.xml:30:17-78
+194                android:value="androidx.startup" />
+194-->[androidx.lifecycle:lifecycle-process:2.7.0] C:\ProgramData\chocolatey\lib\gradle\tools\gradle-8.13\caches\8.13\transforms\d8d536f26fa5cec1666578111bb0c6c1\transformed\jetified-lifecycle-process-2.7.0\AndroidManifest.xml:31:17-49
+195            <meta-data
+195-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\ProgramData\chocolatey\lib\gradle\tools\gradle-8.13\caches\8.13\transforms\4ee08c9f1d7942693697802b50ef03c3\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:29:13-31:52
+196                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
+196-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\ProgramData\chocolatey\lib\gradle\tools\gradle-8.13\caches\8.13\transforms\4ee08c9f1d7942693697802b50ef03c3\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:30:17-85
+197                android:value="androidx.startup" />
+197-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\ProgramData\chocolatey\lib\gradle\tools\gradle-8.13\caches\8.13\transforms\4ee08c9f1d7942693697802b50ef03c3\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:31:17-49
+198        </provider>
+199
+200        <receiver
+200-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\ProgramData\chocolatey\lib\gradle\tools\gradle-8.13\caches\8.13\transforms\4ee08c9f1d7942693697802b50ef03c3\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:34:9-52:20
+201            android:name="androidx.profileinstaller.ProfileInstallReceiver"
+201-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\ProgramData\chocolatey\lib\gradle\tools\gradle-8.13\caches\8.13\transforms\4ee08c9f1d7942693697802b50ef03c3\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:35:13-76
+202            android:directBootAware="false"
+202-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\ProgramData\chocolatey\lib\gradle\tools\gradle-8.13\caches\8.13\transforms\4ee08c9f1d7942693697802b50ef03c3\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:36:13-44
+203            android:enabled="true"
+203-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\ProgramData\chocolatey\lib\gradle\tools\gradle-8.13\caches\8.13\transforms\4ee08c9f1d7942693697802b50ef03c3\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:37:13-35
+204            android:exported="true"
+204-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\ProgramData\chocolatey\lib\gradle\tools\gradle-8.13\caches\8.13\transforms\4ee08c9f1d7942693697802b50ef03c3\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:38:13-36
+205            android:permission="android.permission.DUMP" >
+205-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\ProgramData\chocolatey\lib\gradle\tools\gradle-8.13\caches\8.13\transforms\4ee08c9f1d7942693697802b50ef03c3\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:39:13-57
+206            <intent-filter>
+206-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\ProgramData\chocolatey\lib\gradle\tools\gradle-8.13\caches\8.13\transforms\4ee08c9f1d7942693697802b50ef03c3\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:40:13-42:29
+207                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
+207-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\ProgramData\chocolatey\lib\gradle\tools\gradle-8.13\caches\8.13\transforms\4ee08c9f1d7942693697802b50ef03c3\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:41:17-91
+207-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\ProgramData\chocolatey\lib\gradle\tools\gradle-8.13\caches\8.13\transforms\4ee08c9f1d7942693697802b50ef03c3\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:41:25-88
+208            </intent-filter>
+209            <intent-filter>
+209-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\ProgramData\chocolatey\lib\gradle\tools\gradle-8.13\caches\8.13\transforms\4ee08c9f1d7942693697802b50ef03c3\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:43:13-45:29
+210                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
+210-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\ProgramData\chocolatey\lib\gradle\tools\gradle-8.13\caches\8.13\transforms\4ee08c9f1d7942693697802b50ef03c3\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:44:17-85
+210-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\ProgramData\chocolatey\lib\gradle\tools\gradle-8.13\caches\8.13\transforms\4ee08c9f1d7942693697802b50ef03c3\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:44:25-82
+211            </intent-filter>
+212            <intent-filter>
+212-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\ProgramData\chocolatey\lib\gradle\tools\gradle-8.13\caches\8.13\transforms\4ee08c9f1d7942693697802b50ef03c3\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:46:13-48:29
+213                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
+213-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\ProgramData\chocolatey\lib\gradle\tools\gradle-8.13\caches\8.13\transforms\4ee08c9f1d7942693697802b50ef03c3\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:47:17-88
+213-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\ProgramData\chocolatey\lib\gradle\tools\gradle-8.13\caches\8.13\transforms\4ee08c9f1d7942693697802b50ef03c3\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:47:25-85
+214            </intent-filter>
+215            <intent-filter>
+215-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\ProgramData\chocolatey\lib\gradle\tools\gradle-8.13\caches\8.13\transforms\4ee08c9f1d7942693697802b50ef03c3\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:49:13-51:29
+216                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
+216-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\ProgramData\chocolatey\lib\gradle\tools\gradle-8.13\caches\8.13\transforms\4ee08c9f1d7942693697802b50ef03c3\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:50:17-95
+216-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\ProgramData\chocolatey\lib\gradle\tools\gradle-8.13\caches\8.13\transforms\4ee08c9f1d7942693697802b50ef03c3\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:50:25-92
+217            </intent-filter>
+218        </receiver>
+219
+220        <service
+220-->[com.google.android.datatransport:transport-backend-cct:2.3.3] C:\ProgramData\chocolatey\lib\gradle\tools\gradle-8.13\caches\8.13\transforms\407264b74826c1f12f1f114d074c25c5\transformed\jetified-transport-backend-cct-2.3.3\AndroidManifest.xml:29:9-35:19
+221            android:name="com.google.android.datatransport.runtime.backends.TransportBackendDiscovery"
+221-->[com.google.android.datatransport:transport-backend-cct:2.3.3] C:\ProgramData\chocolatey\lib\gradle\tools\gradle-8.13\caches\8.13\transforms\407264b74826c1f12f1f114d074c25c5\transformed\jetified-transport-backend-cct-2.3.3\AndroidManifest.xml:30:13-103
+222            android:exported="false" >
+222-->[com.google.android.datatransport:transport-backend-cct:2.3.3] C:\ProgramData\chocolatey\lib\gradle\tools\gradle-8.13\caches\8.13\transforms\407264b74826c1f12f1f114d074c25c5\transformed\jetified-transport-backend-cct-2.3.3\AndroidManifest.xml:31:13-37
+223            <meta-data
+223-->[com.google.android.datatransport:transport-backend-cct:2.3.3] C:\ProgramData\chocolatey\lib\gradle\tools\gradle-8.13\caches\8.13\transforms\407264b74826c1f12f1f114d074c25c5\transformed\jetified-transport-backend-cct-2.3.3\AndroidManifest.xml:32:13-34:39
+224                android:name="backend:com.google.android.datatransport.cct.CctBackendFactory"
+224-->[com.google.android.datatransport:transport-backend-cct:2.3.3] C:\ProgramData\chocolatey\lib\gradle\tools\gradle-8.13\caches\8.13\transforms\407264b74826c1f12f1f114d074c25c5\transformed\jetified-transport-backend-cct-2.3.3\AndroidManifest.xml:33:17-94
+225                android:value="cct" />
+225-->[com.google.android.datatransport:transport-backend-cct:2.3.3] C:\ProgramData\chocolatey\lib\gradle\tools\gradle-8.13\caches\8.13\transforms\407264b74826c1f12f1f114d074c25c5\transformed\jetified-transport-backend-cct-2.3.3\AndroidManifest.xml:34:17-36
+226        </service>
+227        <service
+227-->[com.google.android.datatransport:transport-runtime:2.2.6] C:\ProgramData\chocolatey\lib\gradle\tools\gradle-8.13\caches\8.13\transforms\15a6125d8be5c15ef0d775b2f5c17e4e\transformed\jetified-transport-runtime-2.2.6\AndroidManifest.xml:26:9-30:19
+228            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService"
+228-->[com.google.android.datatransport:transport-runtime:2.2.6] C:\ProgramData\chocolatey\lib\gradle\tools\gradle-8.13\caches\8.13\transforms\15a6125d8be5c15ef0d775b2f5c17e4e\transformed\jetified-transport-runtime-2.2.6\AndroidManifest.xml:27:13-117
+229            android:exported="false"
+229-->[com.google.android.datatransport:transport-runtime:2.2.6] C:\ProgramData\chocolatey\lib\gradle\tools\gradle-8.13\caches\8.13\transforms\15a6125d8be5c15ef0d775b2f5c17e4e\transformed\jetified-transport-runtime-2.2.6\AndroidManifest.xml:28:13-37
+230            android:permission="android.permission.BIND_JOB_SERVICE" >
+230-->[com.google.android.datatransport:transport-runtime:2.2.6] C:\ProgramData\chocolatey\lib\gradle\tools\gradle-8.13\caches\8.13\transforms\15a6125d8be5c15ef0d775b2f5c17e4e\transformed\jetified-transport-runtime-2.2.6\AndroidManifest.xml:29:13-69
+231        </service>
+232
+233        <receiver
+233-->[com.google.android.datatransport:transport-runtime:2.2.6] C:\ProgramData\chocolatey\lib\gradle\tools\gradle-8.13\caches\8.13\transforms\15a6125d8be5c15ef0d775b2f5c17e4e\transformed\jetified-transport-runtime-2.2.6\AndroidManifest.xml:32:9-34:40
+234            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver"
+234-->[com.google.android.datatransport:transport-runtime:2.2.6] C:\ProgramData\chocolatey\lib\gradle\tools\gradle-8.13\caches\8.13\transforms\15a6125d8be5c15ef0d775b2f5c17e4e\transformed\jetified-transport-runtime-2.2.6\AndroidManifest.xml:33:13-132
+235            android:exported="false" />
+235-->[com.google.android.datatransport:transport-runtime:2.2.6] C:\ProgramData\chocolatey\lib\gradle\tools\gradle-8.13\caches\8.13\transforms\15a6125d8be5c15ef0d775b2f5c17e4e\transformed\jetified-transport-runtime-2.2.6\AndroidManifest.xml:34:13-37
+236    </application>
+237
+238</manifest>

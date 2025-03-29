@@ -1,0 +1,11 @@
+diff
+        --- a/AndroidManifest.xml
+        +++ b/AndroidManifest.xml
+        @@ -1,5 +1,5 @@
+         <?xml version="1.0" encoding="utf-8"?>
+-        -<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+        -package="com.google_mlkit_smart_reply">
+        +<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+             <application>
+             </application>
+         </manifest>

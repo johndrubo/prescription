@@ -1,0 +1,79 @@
+name: prescription_scanner
+description: A Flutter app for scanning prescriptions and identifying medications
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+    
+  # Core
+  cupertino_icons: ^1.0.6
+  
+  # Camera and Image Processing
+  camera: ^0.10.5+9
+  image_picker: ^1.0.7
+  image: ^4.1.3
+  google_mlkit_text_recognition: ^0.11.0
+  google_mlkit_image_labeling: ^0.10.0
+  
+  # UI and Navigation
+  flutter_svg: ^2.0.9
+  webview_flutter: ^4.5.0
+  flutter_native_splash: ^2.3.10
+  flutter_launcher_icons: ^0.13.1
+  google_fonts: ^6.1.0
+  
+  # State Management
+  provider: ^6.1.1
+  get_it: ^7.6.7
+  flutter_bloc: ^8.1.3
+  
+  # Utilities
+  path_provider: ^2.1.2
+  path: ^1.8.3
+  http: ^1.2.0
+  shared_preferences: ^2.2.2
+  intl: ^0.19.0
+  html: ^0.15.5
+  
+  # Firebase (commented out since we removed Gradle files)
+  # firebase_core: ^2.25.4
+  # firebase_analytics: ^10.8.5
+  # firebase_ml_vision: ^0.12.0+3
+  # cloud_firestore: ^4.15.4
+  # firebase_storage: ^11.6.5
+  
+  # ML and AI
+  tflite_flutter: ^0.10.4
+  google_mlkit_barcode_scanning: ^0.10.0
+  google_mlkit_face_detection: ^0.9.0
+  dotted_border: ^2.1.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.1
+  build_runner: ^2.4.8
+  mockito: ^5.4.4
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/svg/
+    - assets/models/
+  fonts:
+    - family: Aclonica
+      fonts:
+        - asset: assets/fonts/Aclonica-Regular.ttf
+    - family: Acme
+      fonts:
+        - asset: assets/fonts/Acme-Regular.ttf
+    - family: HelveticaNeue
+      fonts:
+        - asset: assets/fonts/HelveticaNeue-Medium.otf
+          weight: 500
+
